@@ -1,3 +1,11 @@
-import getBook from "./getBook";
+import getJoke from "./getJoke";
+import './styles/main.scss';
+import laughing from './assets/laughing.svg'
 
-console.log(getBook())
+const laughImg = document.getElementById("laughImg");
+laughImg.src = laughing
+
+const jokeBtn = document.getElementById("jokeBtn");
+jokeBtn.addEventListener('click', getJoke)
+
+getJoke();
